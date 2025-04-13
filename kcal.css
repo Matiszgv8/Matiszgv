@@ -1,0 +1,205 @@
+body {
+    width: 100%;
+    margin: 0px;
+    background-color: #f4f4f4;
+}
+h1,
+h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#sidebar {
+    width: 70px;
+    height: 100%;
+    background-color: #0a4449;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: width 1s ease;
+    position: fixed;
+    z-index: 1
+}
+
+#sidebar:hover {
+    width: 20%;
+    box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1
+}
+
+#sidebar a {
+    visibility: hidden;
+}
+
+#sidebar:hover a {
+    visibility: visible;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    border-radius: 10px
+}
+
+#sidebar a:hover {
+    font-size: 15pt;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px wheat
+}
+
+#sidebar span {
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 50pt;
+}
+
+#sidebar:hover span {
+    display: none
+}
+
+
+#a1 {
+    width: 100%;
+    height: 200px;
+    float: left;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 15px
+}
+#a1 h1{font-size:23pt}
+#a1 p {
+    padding: 0 100px 0 100px
+}
+
+#a1 p:first-of-type {
+    font-weight: bold;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #f4f4f4;
+    float: left;
+    width: 100%
+}
+
+#form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 75%;
+    position: relative;
+    left: 30px;
+    z-index: 0
+}
+
+input,
+select {
+    width: 100px;
+    padding: 5px;
+    margin: 10px 0
+}
+
+button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+button:hover {
+    background-color: darkblue
+}
+
+aside {
+    width: 30%;
+    height: 750px;
+    background-color: #f4f4f4;
+    float: right
+}
+
+aside img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px
+}
+
+#a2 {
+    width: 70%;
+    height: 350px;
+    background-color: #f4f4f4;
+    float: left;
+    text-align: justify
+}
+
+#a2 h2 {
+    text-align: center
+}
+
+#a2 li span {
+    font-weight: bold;
+}
+
+#a2 ol {
+    list-style-type: decimal;
+    position: relative;
+    left: 20%;
+}
+
+#a2 ul {
+    list-style-type: circle;
+}
+
+footer {
+    width: 70%;
+    height: 400px;
+    background-color: #f4f4f4;
+    float: left;
+    text-align: justify
+}
+
+footer h2 {
+    text-align: center
+}
+
+footer p {
+    text-align: center;
+    font-size: 13pt
+}
+
+footer ul {
+    position: relative;
+    left: 32%;
+    list-style-type: square;
+}
+
+footer a {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

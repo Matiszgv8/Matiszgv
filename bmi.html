@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="bmi.css" />
+    <title>Kalkulator BMI</title>
+    <link rel="icon" type="image/x-icon" href="bmi8.png" />
+  </head>
+
+  <body>
+    <section id="sidebar">
+      <span>⇨</span>
+      <a href="index.html">Powrót do głównej strony</a>
+      <a href="makro.html">zasady zdrowego odżywiania</a>
+      <a href="woda.html">rola wody i nawodnienia</a>
+      <a href="sen.html">sen i regeneracja</a>
+      <a href="bmi.html">kalkulator BMI</a>
+      <a href="kcal.html">kalkulator zapotrzebowania kalorycznego</a>
+      <a href="motywacja.html">pomoc w nawykach i motywacja</a>
+    </section>
+
+    <article id="a1">
+      <h2>Co to jest BMI?</h2>
+      <p>
+        BMI (Body Mass Index) to wskaźnik masy ciała, który pozwala określić,
+        czy waga jest odpowiednia do wzrostu. Choć nie jest to wskaźnik idealny,
+        może dać ogólny obraz tego, czy nasza masa ciała mieści się w zdrowym
+        zakresie. Obliczając BMI, dowiesz się, czy masz niedowagę, prawidłową
+        wagę, nadwagę, czy otyłość.
+      </p>
+      <br />
+      <h2>Jak obliczamy BMI?</h2>
+      <p>
+        Aby obliczyć swoje BMI, wystarczy, że podasz swój wzrost i wagę.
+        Kalkulator BMI szybko poda Ci wynik, a także pomoże w jego
+        interpretacji.
+      </p>
+    </article>
+
+    <aside>
+      <img src="plyw2.jpg" alt="pływak" />
+    </aside>
+    <main>
+      <section id="form">
+        <h1>Kalkulator BMI</h1>
+        <form action="bmi.html" method="post" id="bmiForm">
+          <label for="weight">Waga(kg)</label>
+          <input
+            type="number"
+            name="weight"
+            id="weight"
+            placeholder="Podaj wagę"
+            min="0"
+          />
+          <label for="height">Wzrost(cm)</label>
+          <input
+            type="number"
+            name="height"
+            id="height"
+            placeholder="Podaj wzrost"
+            min="0"
+          /><br /><br />
+          <button type="submit" onclick="calculateBMI()">Oblicz BMI</button>
+          <h2 id="result">Twoje BMI:</h2>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <section id="table">
+      <table>
+        <tr>
+          <th>Zakres BMI</th>
+          <th>Opis</th>
+        </tr>
+        <tr>
+          <td> < 18,5</td>
+          <td><span>Niedowaga</span>: Zbyt mała masa ciała</td>
+        </tr>
+        <tr>
+          <td>18,5 - 24,9</td>
+          <td><span>Waga prawidłowa</span>: Zdrowa masa ciała</td>
+        </tr>
+        <tr>
+          <td>25 - 29,9</td>
+          <td><span>Nadwaga</span>: Zwiększone ryzyko chorób</td>
+        </tr>
+        <tr>
+          <td>30 - 34,9</td>
+          <td><span>Otyłość I stopnia</span>: Wysokie ryzyko chorób</td>
+        </tr>
+        <tr>
+          <td>35 - 39,9</td>
+          <td>
+            <span>Otyłość II stopnia (ciężka)</span>: Bardzo wysokie ryzyko
+            chorób
+          </td>
+        </tr>
+        <tr>
+          <td>≥ 40</td>
+          <td>
+            <span>Otyłość III stopnia (skrajna)</span>: Skrajne ryzyko powikłań
+            zdrowotnych
+          </td>
+        </tr>
+      </table>
+
+      <h3>Ważne!</h3>
+      <p>
+        Pamiętaj, że BMI jest tylko ogólnym wskaźnikiem. Nie uwzględnia on
+        takich czynników jak budowa ciała, proporcja mięśni do tłuszczu, ani
+        rozkład tkanki tłuszczowej. Dlatego warto traktować ten wynik jako punkt
+        wyjścia do dalszej analizy stanu zdrowia.
+      </p>
+      <br />
+    </section>
+
+    <div id="koniec">
+      <h2>Dlaczego warto dbać o zdrową wagę?</h2>
+      <p>
+        Prawidłowa waga ciała to nie tylko kwestia estetyki, ale przede
+        wszystkim zdrowia. Utrzymanie odpowiedniej masy ciała zmniejsza ryzyko
+        wielu chorób, poprawia samopoczucie i zwiększa energię. Odpowiednia
+        dieta, regularna aktywność fizyczna i odpowiedni sen to kluczowe
+        elementy zdrowego stylu życia.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    width: 100%;
+    margin: 0px
+}
+
+#sidebar {
+    width: 70px;
+    height: 100%;
+    background-color: #0a4449;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: width 1s ease;
+    position: fixed;
+}
+
+#sidebar:hover {
+    width: 20%;
+    box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#sidebar a {
+    visibility: hidden;
+}
+
+#sidebar:hover a {
+    visibility: visible;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#sidebar a:hover {
+    font-size: 15pt;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px wheat
+}
+
+#sidebar span {
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 50pt;
+  }
+  
+  #sidebar:hover span {
+    display: none
+  }

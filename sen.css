@@ -1,0 +1,145 @@
+body,
+html {
+  width: 100%;
+  margin: 0px;
+  background-image: url("ksiezyc5.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#sidebar {
+  width: 70px;
+  height: 100%;
+  background-color: #0a4449;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: width 1s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+#sidebar:hover {
+  width: 20%;
+  box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+#sidebar a {
+  visibility: hidden;
+}
+
+#sidebar:hover a {
+  visibility: visible;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#sidebar a:hover {
+  font-size: 15pt;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px wheat;
+}
+
+#sidebar span {
+  visibility: visible;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-size: 50pt;
+}
+
+#sidebar:hover span {
+  display: none;
+}
+header {
+  width: 70%;
+  height: 30%;
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 50px;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  text-align: center;
+}
+header span {
+  font-style: italic;
+}
+header p {
+  text-align: justify;
+  padding: 10px 40px 0 40px;
+}
+#s1 {
+  width: 40%;
+  height: 30%;
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  text-align: center;
+}
+#s2 {
+  width: 40%;
+  height: 30%;
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  text-align: center;
+}
+#s3 {
+  width: 60%;
+  height: 25%;
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 50px;
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  left: 20%;
+}
+#s1 span {
+  font-style: italic;
+}
+#s2 span {
+  font-style: italic;
+}
+#s3 span {
+  font-style: italic;
+}
+footer span {
+  font-style: italic;
+}
+section > p {
+  text-align: justify;
+  padding: 10px 40px 0 40px;
+}
+header,
+section {
+  z-index: 0;
+}

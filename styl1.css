@@ -1,0 +1,159 @@
+body,
+html {
+  width: 100%;
+  margin: 0px;
+}
+h1,h2,h3{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+#sidebar {
+  width: 70px;
+  height: 100%;
+  background-color:#0a4449;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: width 0.9s ease;
+  position: fixed;z-index:1
+}
+
+#sidebar:hover {
+  width: 20%;
+  box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;z-index:1
+}
+
+#sidebar a {
+  visibility: hidden;
+}
+
+#sidebar:hover a {
+  visibility: visible;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px
+}
+
+#sidebar a:hover {
+  font-size: 15pt;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px wheat
+}
+
+
+
+#sidebar span {
+  visibility: visible;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-size: 50pt;
+}
+
+#sidebar:hover span{
+  display: none
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(270deg, rgb(5, 164, 82), rgb(243, 243, 243));
+  float: left;
+  height: 150px;
+  text-align: center;
+}
+
+#a1 {
+  width: 55%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  float: left;
+  font-size: 15pt;
+  align-content: center;
+  padding-left: 80px
+}
+
+#a1,
+#a2 p {
+  text-indent: 1cm;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 15px 15px 15px 95px;
+  text-align: justify
+}
+
+#obrazek {
+  width: 40%;
+  height: 460px;
+}
+
+#obrazek img {
+  position: absolute;
+  top: 160px;
+  left: 63%;
+  width: 35%;
+  height: 440px;
+  border-radius: 20px;
+  margin-top: 10px
+}
+
+#a2 {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  float: left;
+  font-size: 15pt;
+}
+
+#a2 h2 {
+  font-size: 23pt;
+  text-align: center;
+  padding-top: 30px
+}
+
+span {
+  font-weight: bold;
+}
+
+#a2 p {
+  padding: 50px 40px 0px 95px;
+  text-align: justify
+}
+
+#koniec {
+  width: 100%;
+  height: 400px;
+  float: left;
+  text-align: center;
+  font-size: 14pt
+}
+
+#koniec h2 {
+  font-size: 23pt
+}
+
+#koniec p {
+  text-align: justify;
+  position: relative;
+  left: 340px;
+}
+
+#koniec a {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;z-index:0
+ 
+}
+
+#koniec a:hover {
+  text-decoration: underline;
+}
